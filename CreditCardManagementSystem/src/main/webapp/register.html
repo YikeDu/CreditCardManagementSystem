@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>register</title>
+
+  <style type="text/css">* {
+    margin: 0;
+  }
+
+  body {
+    background-color: #8ea4f8;
+    background-repeat: no-repeat;
+    background-size: cover; //背景图适应屏幕
+  }
+  .register_box {
+    width: 800px;
+    height: 600px;
+    background-color: #fff;
+    margin: 150px auto auto;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .title {
+    text-align: center;
+    font-size: 32px;
+    color: #000;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    letter-spacing: 3px;
+    font-family: courier,sans-serif;
+  }
+  .input_box {
+    width: 300px;
+    height: 30px;
+    padding-left: 10px;
+    /*margin-top: 20px;*/
+    /*margin-left: 10px;*/
+    font-family: Courier New,serif;
+  }
+  .register_button {
+    width: 100px;
+    height: 30px;
+    padding-left: 10px;
+    font-family: Courier New,serif;
+  }
+  .td_left{
+    width: 120px;
+    text-align: right;
+    padding-left: 110px;
+    height: 30px;
+  }
+  .td_right{
+    padding: 10px;
+    margin-left: 100px;
+  }
+  .rg_center{
+    float: left;
+    width: 600px;
+  }
+  .rg_right{
+    float: right;
+    margin:22px;
+    font-size:16px;
+    color: #FFBF00;
+  }
+
+  </style>
+  <script type="text/javascript">function success(){
+    alert("register success. login");
+  }</script>
+</head>
+
+<body>
+<div class="register_box">
+  <h1 class="title">user register</h1>
+
+  <div class="rg_center">
+      <form action="/register" method="post">
+        <table>
+          <tr>
+            <td class="td_left"><label for="username">Username:</label></td>
+            <td class="td_right"><input class="input_box" type="text" name="username" id="username" placeholder="username"></td>
+          </tr>
+          <tr>
+            <td class="td_left"><label for="password">Password:</label></td>
+            <td class="td_right"><input class="input_box" type="password" name="password" id="password" placeholder="password"></td>
+          </tr>
+
+          <tr>
+            <td class="td_left"><label for="firstName">First Name:</label></td>
+            <td class="td_right"><input class="input_box" type="text" name="firstName" id="firstName" placeholder="first name"></td>
+          </tr>
+
+          <tr>
+            <td class="td_left"><label for="lastName">Last Name:</label></td>
+            <td class="td_right"><input class="input_box" type="text" name="lastName" id="lastName" placeholder="last name"></td>
+          </tr>
+          <tr>
+            <td class="td_left"><label for="Email">Email:</label></td>
+            <td class="td_right"><label for="email"></label><input class="input_box" type="email" name="email" id="email" placeholder="email"></td>
+          </tr>
+          <tr>
+            <td class="td_left"><label for="tel">Tel:</label></td>
+            <td class="td_right"><input class="input_box" type="number" name="tel" id="tel" placeholder="tel"></td>
+          </tr>
+          <tr>
+            <td class="td_left"></td>
+            <td class="td_right"><input class="register_button" type="submit" id="register" value="register" onclick="success()"></td>
+          </tr>
+        </table>
+      </form>
+  </div>
+  <div class="rg_right">
+    <p>Existing Account?<a href="login.html">login</a></p>
+  </div>
+</div>
+</body>
